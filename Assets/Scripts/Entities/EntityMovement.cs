@@ -3,10 +3,13 @@ using UnityEngine.AI;
 using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(NavMeshAgent))]
+[RequireComponent (typeof(EntityAttributes))]
 public class EntityMovement : MonoBehaviour
 {
 
     NavMeshAgent Agent;
+
+    EntityAttributes EntityAttributes; 
 
 
     public float Range = 1;
@@ -20,8 +23,10 @@ public class EntityMovement : MonoBehaviour
     void Start()
     {
         Agent = GetComponent<NavMeshAgent>();
+        EntityAttributes = GetComponent<EntityAttributes>();
 
-        Agent.speed = 1.0f;//replace with EntityAttributes value when done. 
+        Agent.speed = EntityAttributes.Speed; 
+        Agent.acceleration = EntityAttributes.Speed; 
 
         Click =  InputSystem.actions.FindAction("RightClick");
         Point = InputSystem.actions.FindAction("Point"); 
