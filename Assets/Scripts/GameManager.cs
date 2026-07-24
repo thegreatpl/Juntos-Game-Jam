@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public static int GroundLayer = 10; 
+
+
 
     public static GameManager Instance;
 
