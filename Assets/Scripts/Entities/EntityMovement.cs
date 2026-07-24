@@ -34,7 +34,7 @@ public class EntityMovement : MonoBehaviour
         {
             Ray ray = GameManager.Instance.GetCurrentCamera().ScreenPointToRay(Point.ReadValue<Vector2>());
 
-            if (Physics.Raycast(ray, out RaycastHit hit, GameManager.GroundLayer))
+            if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity))//  GameManager.GroundLayer))
             {
                 if (NavMesh.SamplePosition(hit.point, out NavMeshHit navMeshHit, Range, NavMesh.AllAreas))
                 {

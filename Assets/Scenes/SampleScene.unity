@@ -556,7 +556,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 142016903389720826, guid: a879a36d3749b4244bb1285f28cd6062, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.99999994
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 142016903389720826, guid: a879a36d3749b4244bb1285f28cd6062, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 780084541568849504, guid: a879a36d3749b4244bb1285f28cd6062, type: 3}
       propertyPath: m_Size.x
@@ -621,6 +625,10 @@ PrefabInstance:
     - target: {fileID: 7121974053882924974, guid: a879a36d3749b4244bb1285f28cd6062, type: 3}
       propertyPath: m_Name
       value: SpriteBillboard
+      objectReference: {fileID: 0}
+    - target: {fileID: 8418178116034978654, guid: a879a36d3749b4244bb1285f28cd6062, type: 3}
+      propertyPath: Range
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
